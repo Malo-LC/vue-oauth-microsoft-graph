@@ -1,16 +1,7 @@
 <template>
-  <NavBar />
-  <h1>Tuto 3</h1>
+  <h1>Tuto 3 : homePage</h1>
 </template>
 
-<script>
-import NavBar from '@/components/NavBar.vue';
-export default {
-  name: 'app',
-  components: {
-    NavBar,
-  },
-};
-</script>
+<script></script>
 
 <style></style>

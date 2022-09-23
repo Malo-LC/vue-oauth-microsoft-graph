@@ -1,8 +1,16 @@
 <template>
-  <h1>Tuto 3</h1>
+  <HomePage />
 </template>
 
-<script></script>
+<script>
+import HomePage from './pages/HomePage.vue';
+export default {
+  name: 'app',
+  components: {
+    HomePage,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -11,6 +19,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>

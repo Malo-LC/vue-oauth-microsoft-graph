@@ -26,6 +26,9 @@ export default {
     text: {
       type: String,
     },
+    count: {
+      type: Number,
+    },
   },
 
   data() {
@@ -38,12 +41,11 @@ export default {
     handleClick() {
       //   const originalOnClick = /** @type {() => Promise<void>} */ (
       //     this.$attrs.onClick
-      //   );
+      //   )
       this.isPending = true;
       setTimeout(() => {
-        console.log('finished');
         this.isPending = false;
-      }, 2000);
+      }, 2000 + this.count * 1000);
     },
   },
 };

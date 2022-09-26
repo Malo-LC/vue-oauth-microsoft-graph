@@ -17,7 +17,11 @@
       type="button"
       text="BaseButton with color props"
     />
-    <async-button text="AsyncButton with event handler" />
+    <async-button
+      :count="counter"
+      text="AsyncButton with event handler"
+      @click="handleClick"
+    />
   </div>
 </template>
 
@@ -29,6 +33,17 @@ export default {
   components: {
     BaseButton,
     AsyncButton,
+  },
+  data() {
+    return {
+      counter: 0,
+    };
+  },
+  methods: {
+    handleClick() {
+      this.counter += 1;
+      console.log(this.counter);
+    },
   },
 };
 </script>

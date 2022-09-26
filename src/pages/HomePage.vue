@@ -1,44 +1,40 @@
 <template>
   <h1>Tuto 3 : homePage</h1>
   <div class="flexcolumn">
-    <button class="primary" type="button">BaseButton with custom margin</button>
-    <button class="disabled" type="button">BaseButton disabled</button>
-    <button class="warn" type="button">BaseButton with color props</button>
-    <button class="danger" type="button">BaseButton with color props</button>
+    <base-button
+      className="primary"
+      text="BaseButton with custom margin"
+      type="button"
+    />
+    <base-button
+      className="disabled"
+      type="button"
+      text="BaseButton disabled"
+    />
+    <base-button
+      className="warn"
+      type="button"
+      text="BaseButton with color props"
+    />
+    <base-button
+      className="danger"
+      type="button"
+      text="BaseButton with color props"
+    />
   </div>
 </template>
 
-<script></script>
+<script>
+import BaseButton from '../components/BaseButton.vue';
+export default {
+  name: 'homePage',
+  components: {
+    BaseButton,
+  },
+};
+</script>
 
 <style>
-.danger {
-  background-color: #ee373b;
-}
-.warn {
-  background-color: #ff552f;
-}
-.primary {
-  background-color: #29b883;
-}
-button {
-  width: fit-content;
-  border: none;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
-  cursor: pointer;
-}
-.disabled {
-  background-color: #29b883;
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-.primary:hover {
-  background-color: #84ceaf;
-}
-.primary:focus {
-  border: solid black 1px;
-}
 .flexcolumn {
   display: flex;
   flex-direction: column;

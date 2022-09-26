@@ -1,14 +1,14 @@
 <template>
   <div class="bigNav">
     <div class="insideNav">
-      <button class="leftSide primary">
+      <div class="leftSide">
         <img src="../assets/HomeIcon.png" class="homeicon" />
         <p class="homeText">Home</p>
-      </button>
-      <button class="rightSide primary">
+      </div>
+      <div class="rightSide">
         <p class="LogText">Not logged in yet</p>
         <img src="../assets/AvatarIcon.png" class="avataricon" />
-      </button>
+      </div>
     </div>
   </div>
 </template>

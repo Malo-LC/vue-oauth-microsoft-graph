@@ -1,10 +1,10 @@
 <template>
-  <button :class="className" :type="type">{{ text }}</button>
+  <button :class="color" :type="type">{{ text }}</button>
 </template>
 
 <script>
 export default {
-  props: ['text', 'className', 'type'],
+  props: ['text', 'color', 'type'],
 };
 </script>
 

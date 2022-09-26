@@ -2,22 +2,18 @@
   <h1>Tuto 3 : homePage</h1>
   <div class="flexcolumn">
     <base-button
-      className="primary"
+      color="primary"
       text="BaseButton with custom margin"
       type="button"
     />
+    <base-button color="disabled" type="button" text="BaseButton disabled" />
     <base-button
-      className="disabled"
-      type="button"
-      text="BaseButton disabled"
-    />
-    <base-button
-      className="warn"
+      color="warn"
       type="button"
       text="BaseButton with color props"
     />
     <base-button
-      className="danger"
+      color="danger"
       type="button"
       text="BaseButton with color props"
     />

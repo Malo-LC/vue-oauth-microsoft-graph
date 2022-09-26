@@ -27,6 +27,9 @@ export default {
       type: String,
     },
     count: {
+      type: Function,
+    },
+    counter: {
       type: Number,
     },
   },
@@ -42,12 +45,13 @@ export default {
       const originalOnClick = new Promise((resolve) => {
         setTimeout(() => {
           resolve('foo');
-        }, 2000);
+        }, 2000 + this.counter * 1000);
       });
       this.isPending = true;
       originalOnClick.finally(() => {
         this.isPending = false;
       });
+      this.count();
     },
   },
 };

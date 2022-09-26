@@ -15,6 +15,7 @@ export default {
 .warn {
   background-color: #ff552f;
 }
+
 .primary {
   background-color: #29b883;
 }

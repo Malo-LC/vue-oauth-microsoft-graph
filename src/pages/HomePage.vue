@@ -20,7 +20,7 @@
     <async-button
       :count="counter"
       text="AsyncButton with event handler"
-      @click="handleClick"
+      @click="counter++"
     />
   </div>
 </template>
@@ -38,12 +38,6 @@ export default {
     return {
       counter: 0,
     };
-  },
-  methods: {
-    handleClick() {
-      this.counter += 1;
-      console.log(this.counter);
-    },
   },
 };
 </script>

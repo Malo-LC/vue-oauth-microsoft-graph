@@ -39,13 +39,15 @@ export default {
 
   methods: {
     handleClick() {
-      //   const originalOnClick = /** @type {() => Promise<void>} */ (
-      //     this.$attrs.onClick
-      //   )
+      const originalOnClick = new Promise((resolve) => {
+        setTimeout(() => {
+          resolve('foo');
+        }, 2000);
+      });
       this.isPending = true;
-      setTimeout(() => {
+      originalOnClick.finally(() => {
         this.isPending = false;
-      }, 2000 + this.count * 1000);
+      });
     },
   },
 };

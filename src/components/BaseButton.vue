@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'BaseButton',
   props: ['text', 'color', 'type'],
 };
 </script>

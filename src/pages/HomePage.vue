@@ -17,15 +17,18 @@
       type="button"
       text="BaseButton with color props"
     />
+    <async-button text="AsyncButton with event handler" />
   </div>
 </template>
 
 <script>
 import BaseButton from '../components/BaseButton.vue';
+import AsyncButton from '../components/AsyncButton.vue';
 export default {
   name: 'homePage',
   components: {
     BaseButton,
+    AsyncButton,
   },
 };
 </script>

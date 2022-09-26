@@ -1,5 +1,7 @@
 <template>
-  <button :class="color" :type="type">{{ text }}</button>
+  <button class="flexrow" :class="color" :type="type">
+    <slot class="mr" />{{ text }}
+  </button>
 </template>
 
 <script>
@@ -37,5 +39,13 @@ button {
 }
 .primary:focus {
   border: solid black 1px;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mr {
+  margin-right: 10px;
 }
 </style>
